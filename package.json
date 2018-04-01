@@ -1,0 +1,24 @@
+{
+  "name": "gallery-demo",
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {
+    "start": "babel-node server.js",
+    "start-dev-server": "nodemon --exec yarn start",
+    "build": "rimraf ./dist/* && parcel build index.html --no-cache -d ./dist --public-url /dist/"
+  },
+  "dependencies": {
+    "koa": "^2.5.0",
+    "koa-static": "^4.0.2",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "node-sass": "^4.8.3",
+    "parcel-bundler": "^1.6.2",
+    "rimraf": "^2.6.2"
+  }
+}
