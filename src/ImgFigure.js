@@ -10,14 +10,11 @@ class ImgFigure extends Component {
    * imgFigure 的点击处理函数
    */
   handleClick(e) {
-
-    //console.log(this.props)
     if (this.props.arrange.isCenter) {
       this.props.inverse()
     } else {
       this.props.center()
     }
-
     e.stopPropagation()
     e.preventDefault()
   }
@@ -46,9 +43,12 @@ class ImgFigure extends Component {
     let imgFigureClassName = "img-figure"
     imgFigureClassName += this.props.arrange.isInverse ? ' is-inverse' : ''
 
-
     return (
-      <figure className={imgFigureClassName} style={styleObj} onClick={this.handleClick}>
+      <figure 
+        className={imgFigureClassName}
+        style={styleObj} 
+        onClick={this.handleClick}
+      >
         <img src={this.props.data.imageURL}
              alt={this.props.data.title}
         />

@@ -24,13 +24,11 @@ imageDatas = ((imageDataArr) => {
   for (let i = 0, j = imageDataArr.length; i < j; i++) {
     let singleImageData = imageDataArr[i]
     singleImageData.imageURL = '../images/' + singleImageData.fileName
-    //singleImageData.imageURL = '../images/1.jpg' 
     imageDataArr[i] = singleImageData
   }
   return imageDataArr
 })(imageDatas)
 //imageDatas = genImageURL(imageDatas)
-
 
 const Constant = {
   centerPos: {

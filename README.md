@@ -11,4 +11,4 @@
   yarn build
   yarn start-dev-server
 ```
-  然后打开 Chrome,访问 localhose:3000/dist/index.html
+  然后打开 Chrome, 访问 localhose:3000/dist/index.html
